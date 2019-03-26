@@ -8,7 +8,7 @@ MCU  = STM32F303
 # Build Options
 #   comment out to disable the options.
 #
-BACKLIGHT_ENABLE = no
+BACKLIGHT_ENABLE = yes
 BOOTMAGIC_ENABLE = yes	# Virtual DIP switch configuration
 ## (Note that for BOOTMAGIC on Teensy LC you have to use a custom .ld script.)
 MOUSEKEY_ENABLE = yes	# Mouse keys
@@ -19,6 +19,6 @@ COMMAND_ENABLE = yes    # Commands for debug and configuration
 NKRO_ENABLE = yes	    # USB Nkey Rollover
 CUSTOM_MATRIX = yes # Custom matrix file
 AUDIO_ENABLE = yes
-RGBLIGHT_ENABLE = no
+RGBLIGHT_ENABLE = yes
 # SERIAL_LINK_ENABLE = yes
 ENCODER_ENABLE = yes
