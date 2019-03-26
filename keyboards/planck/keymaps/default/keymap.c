@@ -273,20 +273,17 @@ void encoder_update(bool clockwise) {
     }
   } else {
     if (clockwise) {
-      #ifdef MOUSEKEY_ENABLE
-        register_code(KC_MS_WH_DOWN);
-        unregister_code(KC_MS_WH_DOWN);
-      #else
-        register_code(KC_PGDN);
-        unregister_code(KC_PGDN);
+        register_code(KC_LALT);
+		register_code(KC_TAB);
+		unregister_code(KC_LALT);
+		unregister_code(KC_TAB);
       #endif
-    } else {
-      #ifdef MOUSEKEY_ENABLE
-        register_code(KC_MS_WH_UP);
-        unregister_code(KC_MS_WH_UP);
-      #else
-        register_code(KC_PGUP);
-        unregister_code(KC_PGUP);
+	    register_code(KC_LALT);
+		register_code(KC_TAB);
+		register_code(KC_LSHIFT);
+		unregister_code(KC_LALT);
+		unregister_code(KC_TAB);
+		unregister_code(KC_LSHIFT);
       #endif
     }
   }
